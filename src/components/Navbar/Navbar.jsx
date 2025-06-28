@@ -4,7 +4,7 @@ import './nav.css'
 
 const Navbar = () => {
     const links = <>
-        <a href="">Home</a>
+        <a href="#hero">Home</a>
         {/* <NavLink to='/h'><a href="">About Me</a></NavLink> */}
         <a href="#aboutMe">About Me</a>
         <a href="#mySkills">Skills</a>

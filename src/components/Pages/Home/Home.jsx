@@ -6,7 +6,7 @@ import Skills from '../../Skills/Skills';
 const Home = () => {
     return (
         <div>
-            <div>
+            <div id='hero'>
                 <Hero/>
             </div>
             <div id='aboutMe'>

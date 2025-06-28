@@ -4,7 +4,7 @@ import { FaDownload } from 'react-icons/fa';
 const AboutMe = () => {
     return (
         // bg-[#36283F]
-        <div className="w-10/12 mx-auto py-32  text-white rounded-xl ">
+        <div className="w-10/12 mx-auto pt-16 pb-32  text-white rounded-xl ">
             {/* Profile Image Section */}
             <div className="flex justify-center mb-16 relative w-fit mx-auto">
                 {/* Left Dotted Design */}
