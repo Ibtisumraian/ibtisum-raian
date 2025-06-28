@@ -4,14 +4,15 @@ import './nav.css'
 
 const Navbar = () => {
     const links = <>
-        <NavLink to='/'><a href="">Home</a></NavLink>
-        <NavLink to='/h'><a href="">About Me</a></NavLink>
-        <NavLink to='/h'><a href="">Skills</a></NavLink>
-        <NavLink to='/h'><a href="">Projects</a></NavLink>
+        <a href="">Home</a>
+        {/* <NavLink to='/h'><a href="">About Me</a></NavLink> */}
+        <a href="#aboutMe">About Me</a>
+        <a href="">Skills</a>
+        <a href="">Projects</a>
         {/* <NavLink to='/h'><a href="">Contacts</a></NavLink> */}
     </>
   return (
-    <div className="sticky top-0 z-50">
+    <div className="sticky top-0 z-50 backdrop-blur-xl">
       <div className="navbar  text-white w-10/12 mx-auto py-6 ">
         <div className="navbar-start">
           <div className="dropdown">
