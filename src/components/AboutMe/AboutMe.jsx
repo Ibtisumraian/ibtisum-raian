@@ -1,9 +1,10 @@
 import React from 'react';
+import { FaDownload } from 'react-icons/fa';
 
 const AboutMe = () => {
     return (
         // bg-[#36283F]
-        <div className="w-10/12 mx-auto py-32  text-white rounded-xl">
+        <div className="w-10/12 mx-auto py-32  text-white rounded-xl ">
             {/* Profile Image Section */}
             <div className="flex justify-center mb-16 relative w-fit mx-auto">
                 {/* Left Dotted Design */}
@@ -18,8 +19,8 @@ const AboutMe = () => {
                 {/* Main Circular Image */}
                 {/* <div className="relative z-10 rounded-full overflow-hidden  ">
                     <img
-                        className="w-60 h-60 object-cover"
-                        src="https://res.cloudinary.com/dv6p7mprd/image/upload/v1751131663/IMG_20220617_202016_lgebdt.jpg"
+                        className="w-60 h-60 object-cover bg-gray-100"
+                        src="https://res.cloudinary.com/dv6p7mprd/image/upload/v1751135611/IMG_20220617_202016-removebg-preview_g1j9fr.png"
                         alt="Ibtisum Raian"
                     />
                 </div> */}
@@ -35,8 +36,8 @@ const AboutMe = () => {
             </div>
 
             {/* About Text Section */}
-            <div className="text-center flex flex-col gap-12 max-w-4xl mx-auto">
-                <h1 className="text-5xl font-bold">About Me</h1>
+            <div className=" flex flex-col gap-12  mx-auto">
+                <h1 className="text-5xl font-bold ">About Me</h1>
                 <p className="text-lg leading-relaxed">
                     Hi! I’m Ibtisum Raian, a passionate MERN Stack Developer who loves crafting seamless web experiences from concept to code.
                     My journey into the world of programming began with curiosity and quickly evolved into a full-blown passion. Over time,
@@ -55,6 +56,9 @@ const AboutMe = () => {
                     <br /><br />
                     Thanks for stopping by! I’m always open to collaborating, learning, and creating something meaningful together.
                 </p>
+                <div>
+                    <a className="w-fit text-2xl py-2 px-6 mt-8 rounded-4xl drop-shadow-xl/20  bg-gradient-to-b from-[#e9615e]  to-[#ec9956] flex items-center gap-3 cursor-pointer"> <FaDownload className='text-lg' />Download CV</a>
+                </div>
             </div>
         </div>
     );
