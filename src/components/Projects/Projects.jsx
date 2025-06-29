@@ -76,7 +76,7 @@ const Projects = () => {
 
   return (
     <section className="w-11/12 mx-auto py-20">
-      <h2 className="text-center text-white text-5xl font-bold mb-16">My Projects</h2>
+      <h2 className="text-center text-white text-3xl sm:text-5xl font-bold mb-16">My Projects</h2>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project) => (

@@ -57,7 +57,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="w-11/12 mx-auto py-20 text-white">
-      <h2 className="text-5xl font-bold text-center mb-16">Contact</h2>
+      <h2 className="text-3xl sm:text-5xl font-bold text-center mb-16">Contact</h2>
 
       <div className="grid md:grid-cols-2 gap-10 bg-gradient-to-br from-[#62393c] to-[#181e41] p-6 rounded-3xl border border-[#ec9956]">
         {/* Left - Contact Info */}

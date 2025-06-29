@@ -35,16 +35,18 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm flex items-center gap-5 text-gray-600 dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm bg-gradient-to-br from-[#62393c]  to-[#181e41] flex items-center gap-5 text-white dropdown-content  rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               {links}
             </ul>
           </div>
-          <div  className="flex items-center">
-            <img
-            className="w-16"
-             src="https://res.cloudinary.com/dv6p7mprd/image/upload/v1751115799/logo00-removebg-preview_vmyien.png" alt="" />
-            <a className=" text-2xl font-bold">Ibtisum Raian</a>
+          <div  className="hidden md:block ">
+            <div className="flex items-center ">
+              <img
+                className="w-16"
+                src="https://res.cloudinary.com/dv6p7mprd/image/upload/v1751115799/logo00-removebg-preview_vmyien.png" alt="" />
+                <a className=" text-2xl font-bold">Ibtisum Raian</a>
+            </div>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -53,7 +55,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a href="#contact" className=" py-2 px-4 rounded-4xl drop-shadow-xl/20 text-xl bg-gradient-to-b from-[#e9615e]  to-[#ec9956]">Contact</a>
+          <a href="#contact" className="py-1 sm:py-2 px-2 sm:px-4 rounded-4xl drop-shadow-xl/20 text-shadow-sm sm:text-xl bg-gradient-to-b from-[#e9615e]  to-[#ec9956]">Contact</a>
         </div>
       </div>
     </div>

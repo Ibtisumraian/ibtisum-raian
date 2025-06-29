@@ -7,15 +7,15 @@ const Hero = () => {
         <div className='w-10/12 mx-auto py-12 '>
             <div className='flex items-center flex-col-reverse lg:flex-row lg:justify-between gap-3 '>
                 <div className='text-white flex flex-col gap-3 text-center lg:text-start'>
-                    <h1 className='text-5xl 2xl:text-7xl font-bold'>Ibtisum Raian</h1>
-                    <h1 className='text-5xl 2xl:text-7xl font-bold'>Full Stack Developer</h1>
-                    <p className='max-w-[700px] my-8 text-lg'>I'm a passionate MERN Stack Developer focused on building high-performance, full-stack web applications. With a strong eye for detail and a love for clean code, I turn complex ideas into seamless digital experiences — from intuitive frontends to robust backends.</p>
+                    <h1 className='text-2xl sm:text-5xl 2xl:text-7xl font-bold'>Ibtisum Raian</h1>
+                    <h1 className='text-2xl sm:text-5xl 2xl:text-7xl font-bold'>Full Stack Developer</h1>
+                    <p className='max-w-[700px] my-8 text-md sm:text-lg'>I'm a passionate MERN Stack Developer focused on building high-performance, full-stack web applications. With a strong eye for detail and a love for clean code, I turn complex ideas into seamless digital experiences — from intuitive frontends to robust backends.</p>
                     <div className='flex items-center justify-center lg:justify-start gap-5'>
-                        <a href='https://github.com/Ibtisumraian' target='blank' className='bg-gradient-to-b from-[#e9615e]  to-[#ec9956] p-2 rounded-lg text-lg  '><FaGithub /></a>
-                        <a href='https://x.com/ib_raian' target='blank' className='bg-gradient-to-b from-[#e9615e]  to-[#ec9956] p-2 rounded-lg text-lg  '><FaXTwitter /></a>
-                        <a href='https://www.linkedin.com/' target='blank' className='bg-gradient-to-b from-[#e9615e]  to-[#ec9956] p-2 rounded-lg text-lg  '><FaLinkedin /></a>
+                        <a href='https://github.com/Ibtisumraian' target='blank' className='bg-gradient-to-b from-[#e9615e]  to-[#ec9956] p-2 rounded-lg text-md sm:text-lg  '><FaGithub /></a>
+                        <a href='https://x.com/ib_raian' target='blank' className='bg-gradient-to-b from-[#e9615e]  to-[#ec9956] p-2 rounded-lg text-md sm:text-lg '><FaXTwitter /></a>
+                        <a href='https://www.linkedin.com/' target='blank' className='bg-gradient-to-b from-[#e9615e]  to-[#ec9956] p-2 rounded-lg text-md sm:text-lg '><FaLinkedin /></a>
                     </div>
-                    <a className="w-fit mx-auto lg:mx-0 text-2xl py-2 px-6 mt-8 rounded-4xl drop-shadow-xl/20  bg-gradient-to-b from-[#e9615e]  to-[#ec9956] flex items-center gap-3 cursor-pointer"> <FaDownload className='text-lg' />Resume</a>
+                    <a className="w-fit mx-auto lg:mx-0 text-xl sm:text-2xl py-2 px-6 mt-8 rounded-4xl drop-shadow-xl/20  bg-gradient-to-b from-[#e9615e]  to-[#ec9956] flex items-center gap-3 cursor-pointer"> <FaDownload className='text-sm sm:text-lg' />Resume</a>
                     
                 </div>
                 <div className='flex items-center gap-3'>
