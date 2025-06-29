@@ -1,12 +1,56 @@
-# React + Vite
+# 🌐 Ibtisum Raian — Portfolio Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the client-side source code for my professional portfolio website. Built with React and styled using Tailwind CSS, this site highlights my skills, projects, and provides an elegant way to connect and communicate.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Site
 
-## Expanding the ESLint configuration
+**Visit Here** 👉 [https://ibtisum-raian.web.app/](https://ibtisum-raian.web.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- ✨ Smooth, responsive design
+- 🎨 Custom theme using dark brown & concrete gray tones
+- 📧 Contact form with email sending via Axios & backend integration
+- 🔔 Beautiful SweetAlert2 notifications with custom color styling
+- 🧑‍💻 Sections for About, Projects, Skills, Contact, and more
+- ⚡ Performance-optimized with reusable React components
+
+---
+
+## 📂 Tech Stack
+
+- **React.js**
+- **Tailwind CSS**
+- **Axios** (for API requests)
+- **SweetAlert2** (custom modal alerts)
+- **React Icons**
+
+---
+
+
+## 👤 Author
+
+**Ibtisum Raian**  
+Email: ibtisumraian@gmail.com  
+GitHub: [Ibtisumraian](https://github.com/Ibtisumraian)
+
+---
+
+
+
+## 🔐 Environment Variables
+
+---
+
+## 📬 Contact Form Integration
+
+The contact form uses Axios to send data to the server:
+
+```js
+POST /api/send-email
+
+
