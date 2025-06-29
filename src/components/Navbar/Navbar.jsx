@@ -53,7 +53,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className=" py-2 px-4 rounded-4xl drop-shadow-xl/20 text-xl bg-gradient-to-b from-[#e9615e]  to-[#ec9956]">Contact</a>
+          <a href="#contact" className=" py-2 px-4 rounded-4xl drop-shadow-xl/20 text-xl bg-gradient-to-b from-[#e9615e]  to-[#ec9956]">Contact</a>
         </div>
       </div>
     </div>
