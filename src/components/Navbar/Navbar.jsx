@@ -5,10 +5,10 @@ import './nav.css'
 const Navbar = () => {
     const links = <>
         <a href="#hero">Home</a>
-        {/* <NavLink to='/h'><a href="">About Me</a></NavLink> */}
+        {/* <NavLink to='/'><h1 href="#hero">Home</h1></NavLink> */}
         <a href="#aboutMe">About Me</a>
         <a href="#mySkills">Skills</a>
-        <a href="">Projects</a>
+        <a href="#projects">Projects</a>
         {/* <NavLink to='/h'><a href="">Contacts</a></NavLink> */}
     </>
   return (

@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Root from "./Root";
 import Home from "../Pages/Home/Home";
+// import ProjectDetails from "../Pages/ProjectDetails/ProjectDetails";
 
 export const router = createBrowserRouter([
   {
@@ -10,7 +11,11 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: Home
-      }
+      },
+      // {
+      //   path: '/ProjectDetails/:id',
+      //   Component: ProjectDetails
+      // }
     ]
   },
 ]);

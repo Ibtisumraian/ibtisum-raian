@@ -26,7 +26,7 @@ const SkillGroup = ({ title, skills }) => (
 // Main Skills Component
 const Skills = () => {
   return (
-    <section className="w-11/12 max-w-7xl mx-auto py-20">
+    <section className="w-11/12  mx-auto py-20">
       <h2 className="text-center text-white text-5xl font-bold mb-16">My Skills</h2>
 
       {/* Frontend Skills */}
