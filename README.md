@@ -4,9 +4,10 @@ This is the client-side source code for my professional portfolio website. Built
 
 ---
 
-## 🔗 Live Site
+## 🔗 Live Site & Server
 
-**Visit Here** 👉 [https://ibtisum-raian.web.app/](https://ibtisum-raian.web.app/)
+- 🌍 **Live Site**: [https://ibtisum-raian.web.app/](https://ibtisum-raian.web.app/)  
+- 🖥 **Server Repo**: [https://github.com/Ibtisumraian/ibtisum-raian-server](https://github.com/Ibtisumraian/ibtisum-raian-server)
 
 ---
 
