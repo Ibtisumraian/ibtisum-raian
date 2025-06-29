@@ -21,8 +21,8 @@ const projects = [
       "Admin dashboard for monitoring and reporting",
       "Responsive and modern UI design"
     ],
-    liveDemo: "https://whereisit.vercel.app",
-    clientCode: "https://github.com/ibtisumraian/whereisit-client",
+    liveDemo: "https://whereisit-app.web.app/",
+    clientCode: "https://github.com/Ibtisumraian/whereisit",
     serverCode: "https://github.com/ibtisumraian/whereisit-server"
   },
   {
@@ -43,8 +43,8 @@ const projects = [
       "Responsive layout with animation",
       "Dark/light mode toggle"
     ],
-    liveDemo: "https://recipe-book-app.vercel.app",
-    clientCode: "https://github.com/ibtisumraian/recipe-book-client",
+    liveDemo: "https://recipe-book-bff32.web.app/",
+    clientCode: "https://github.com/Ibtisumraian/recipe-book",
     serverCode: "https://github.com/ibtisumraian/recipe-book-server"
   },
   {
@@ -65,8 +65,8 @@ const projects = [
       "Integrated backend with MongoDB",
       "Elegant and functional UI for business use"
     ],
-    liveDemo: "https://espresso-emporium.netlify.app",
-    clientCode: "https://github.com/ibtisumraian/espresso-client",
+    liveDemo: "https://espresso-emporium-c8f01.web.app/",
+    clientCode: "https://github.com/Ibtisumraian/espresso-emporium",
     serverCode: "https://github.com/ibtisumraian/espresso-server"
   }
 ];

@@ -103,6 +103,7 @@ const Contact = () => {
           onSubmit={handleFormSubmit}
           className="bg-[#2b2d42] bg-opacity-30 p-6 rounded-2xl border border-[#ec9956] flex flex-col gap-4"
         >
+          {/* <h3 className="text-3xl font-bold text-[#ec9956] mb-2">Stay in touch</h3> */}
           <input
             type="text"
             name="name"
