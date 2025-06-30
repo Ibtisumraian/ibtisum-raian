@@ -13,7 +13,7 @@ const Hero = () => {
         {/* Left - Text Content */}
         <div className='text-white flex flex-col gap-3 text-center lg:text-start'>
 
-          <Fade direction="up" duration={500} cascade damping={0.15}>
+          <Fade direction="up" cascade damping={0.1} triggerOnce>
             <h1 className='text-2xl sm:text-5xl 2xl:text-7xl font-bold'>
               Ibtisum Raian
             </h1>
@@ -26,7 +26,7 @@ const Hero = () => {
           </Fade>
 
           {/* Social Icons */}
-          <Fade direction="up" delay={300} duration={500}>
+          <Fade direction="up" cascade damping={0.1} triggerOnce>
             <div className='flex items-center justify-center lg:justify-start gap-5'>
               <a href='https://github.com/Ibtisumraian' target='blank' className='bg-gradient-to-b from-[#e9615e] to-[#ec9956] p-2 rounded-lg text-md sm:text-lg'>
                 <FaGithub />
@@ -41,7 +41,7 @@ const Hero = () => {
           </Fade>
 
           {/* Resume Button */}
-          <Fade direction="up" delay={400} duration={500}>
+          <Fade direction="up" cascade damping={0.1} triggerOnce>
             <BubbleWrapper>
               <a className="w-fit mx-auto lg:mx-0 text-xl sm:text-2xl py-2 px-6 mt-8 rounded-4xl drop-shadow-xl/20 bg-gradient-to-b from-[#e9615e] to-[#ec9956] flex items-center gap-3 cursor-pointer">
                 <FaDownload className='text-sm sm:text-lg' />Resume
