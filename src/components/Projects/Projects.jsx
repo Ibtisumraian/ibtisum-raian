@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaExternalLinkAlt, FaCode } from "react-icons/fa";
+import { motion } from "framer-motion";
 import ProjectModal from "../ProjectModal/ProjectModal";
 
 const projects = [
@@ -71,25 +72,68 @@ const projects = [
   }
 ];
 
+// Motion Variants
+const containerVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.3,
+      ease: 'easeOut'
+    }
+  }
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, scale: 0.9, y: 20 },
+  visible: { 
+    opacity: 1, 
+    scale: 1, 
+    y: 0, 
+    transition: { duration: 0.5, ease: 'easeOut' }
+  },
+  hover: {
+    scale: 1.05,
+    transition: { duration: 0.3, ease: 'easeInOut' }
+  }
+};
+
+const buttonVariants = {
+  hover: {
+    scale: 1.1,
+    transition: { duration: 0.2, ease: 'easeInOut' }
+  }
+};
+
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <section className="w-11/12 mx-auto py-20">
+    <motion.section
+      className="w-11/12 mx-auto py-20"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={containerVariants}
+    >
       <h2 className="text-center text-white text-3xl sm:text-5xl font-bold mb-16">My Projects</h2>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <motion.div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project) => (
-          <div
+          <motion.div
             key={project.id}
-            className="bg-gradient-to-br from-[#62393c] to-[#181e41] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-[#ec9956] flex flex-col"
+            variants={cardVariants}
+            whileHover="hover"
+            className="bg-gradient-to-br from-[#62393c] to-[#181e41] rounded-xl overflow-hidden shadow-lg border border-[#ec9956] flex flex-col"
           >
             <img
               src={project.image}
               alt={project.name}
               className="w-full h-52 object-cover"
             />
-            <div className="p-6 flex flex-col justify-between text-white">
+            <div className="p-6 flex flex-col justify-between text-white flex-grow">
               <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
               <p className="text-gray-300 text-sm mb-3">{project.descriptionShort}</p>
 
@@ -105,33 +149,39 @@ const Projects = () => {
               </div>
 
               <div className="flex flex-wrap gap-3 mt-auto">
-                <button
+                <motion.button
                   onClick={() => setSelectedProject(project)}
-                  className="bg-gradient-to-b from-[#e9615e] to-[#ec9956] px-4 py-2 rounded-md font-semibold text-white hover:scale-105 transition"
+                  variants={buttonVariants}
+                  whileHover="hover"
+                  className="bg-gradient-to-b from-[#e9615e] to-[#ec9956] cursor-pointer px-4 py-2 rounded-md font-semibold text-white"
                 >
                   Details
-                </button>
-                <a
+                </motion.button>
+                <motion.a
                   href={project.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-b from-[#e9615e] to-[#ec9956] px-4 py-2 rounded-md font-semibold text-white flex items-center gap-2 hover:scale-105 transition"
+                  variants={buttonVariants}
+                  whileHover="hover"
+                  className="bg-gradient-to-b from-[#e9615e] to-[#ec9956] px-4 py-2 rounded-md font-semibold text-white flex items-center gap-2"
                 >
                   <FaExternalLinkAlt /> Live
-                </a>
-                <a
+                </motion.a>
+                <motion.a
                   href={project.clientCode}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-b from-[#e9615e] to-[#ec9956] px-4 py-2 rounded-md font-semibold text-white flex items-center gap-2 hover:scale-105 transition"
+                  variants={buttonVariants}
+                  whileHover="hover"
+                  className="bg-gradient-to-b from-[#e9615e] to-[#ec9956] px-4 py-2 rounded-md font-semibold text-white flex items-center gap-2"
                 >
                   <FaCode /> Code
-                </a>
+                </motion.a>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
       {/* Modal */}
       {selectedProject && (
@@ -140,7 +190,7 @@ const Projects = () => {
           onClose={() => setSelectedProject(null)}
         />
       )}
-    </section>
+    </motion.section>
   );
 };
 

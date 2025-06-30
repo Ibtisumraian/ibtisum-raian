@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const AboutMe = () => {
   return (
     <motion.div
-      className="w-10/12 mx-auto  pb-32 text-white rounded-xl"
+      className="w-10/12 mx-auto pt-8 pb-32 text-white rounded-xl"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -32,7 +32,7 @@ const AboutMe = () => {
           </motion.h1>
 
           <motion.p
-            className="text-md sm:text-lg leading-relaxed max-w-5xl"
+            className="text-md sm:text-lg leading-relaxed "
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
