@@ -11,7 +11,7 @@ const projects = [
       "A MERN stack Lost & Found platform with JWT auth and advanced item search.",
     descriptionLong:
       "WhereIsIt is a full-stack Lost & Found web application built using the MERN stack. It allows users to post and browse lost or found items securely using JWT-based authentication. The platform features advanced filtering by tags, categories, and locations, and includes a dedicated admin dashboard for monitoring listings and user activities. The responsive design ensures accessibility on all devices.",
-    image: "https://res.cloudinary.com/dv6p7mprd/image/upload/v1751193601/Screenshot_2025-06-29_163852_yxpny7.png",
+    image: "https://res.cloudinary.com/dv6p7mprd/image/upload/v1751277643/Screenshot_2025-06-30_155846_qdmskb.png",
     technologies: [
       "React", "Node.js", "Express.js", "MongoDB", "JWT", "TailwindCSS"
     ],
