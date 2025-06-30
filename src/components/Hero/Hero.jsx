@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import BubbleWrapper from '../BubbleWrapper/BubbleWrapper';
 
 const Hero = () => {
     return (
@@ -15,7 +16,9 @@ const Hero = () => {
                         <a href='https://x.com/ib_raian' target='blank' className='bg-gradient-to-b from-[#e9615e]  to-[#ec9956] p-2 rounded-lg text-md sm:text-lg '><FaXTwitter /></a>
                         <a href='https://www.linkedin.com/' target='blank' className='bg-gradient-to-b from-[#e9615e]  to-[#ec9956] p-2 rounded-lg text-md sm:text-lg '><FaLinkedin /></a>
                     </div>
-                    <a className="w-fit mx-auto lg:mx-0 text-xl sm:text-2xl py-2 px-6 mt-8 rounded-4xl drop-shadow-xl/20  bg-gradient-to-b from-[#e9615e]  to-[#ec9956] flex items-center gap-3 cursor-pointer"> <FaDownload className='text-sm sm:text-lg' />Resume</a>
+                    <BubbleWrapper>
+                        <a className="w-fit mx-auto lg:mx-0 text-xl sm:text-2xl py-2 px-6 mt-8 rounded-4xl drop-shadow-xl/20  bg-gradient-to-b from-[#e9615e]  to-[#ec9956] flex items-center gap-3 cursor-pointer"> <FaDownload className='text-sm sm:text-lg' />Resume</a>
+                    </BubbleWrapper>
                     
                 </div>
                 <div className='flex items-center gap-3'>

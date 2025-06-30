@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaDownload } from 'react-icons/fa';
+import BubbleWrapper from '../BubbleWrapper/BubbleWrapper';
 
 const AboutMe = () => {
     return (
@@ -57,7 +58,9 @@ const AboutMe = () => {
                     Thanks for stopping by! I’m always open to collaborating, learning, and creating something meaningful together.
                 </p>
                 <div>
-                    <a className="w-fit text-xl sm:text-2xl py-2 px-6 mt-8 rounded-4xl drop-shadow-xl/20  bg-gradient-to-b from-[#e9615e]  to-[#ec9956] flex items-center gap-3 cursor-pointer"> <FaDownload className='text-sm sm:text-lg' />Download CV</a>
+                    <BubbleWrapper>
+                        <a href='#projects' className="w-fit text-xl sm:text-2xl py-2 px-6 mt-8 rounded-4xl drop-shadow-xl/20  bg-gradient-to-b from-[#e9615e]  to-[#ec9956] flex items-center gap-3 cursor-pointer"> View Projects</a>
+                    </BubbleWrapper>
                 </div>
             </div>
         </div>
