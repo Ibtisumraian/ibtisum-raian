@@ -4,6 +4,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import { Fade } from 'react-awesome-reveal';
 import BubbleWrapper from '../BubbleWrapper/BubbleWrapper';
+import { Link } from 'react-router';
 
 const Hero = () => {
   return (
@@ -31,7 +32,7 @@ const Hero = () => {
               <a href='https://github.com/Ibtisumraian' target='blank' className='bg-gradient-to-b from-[#e9615e] to-[#ec9956] p-2 rounded-lg text-md sm:text-lg'>
                 <FaGithub />
               </a>
-              <a href='https://x.com/ib_raian' target='blank' className='bg-gradient-to-b from-[#e9615e] to-[#ec9956] p-2 rounded-lg text-md sm:text-lg'>
+              <a href='https://x.com/ibtisumraian' target='blank' className='bg-gradient-to-b from-[#e9615e] to-[#ec9956] p-2 rounded-lg text-md sm:text-lg'>
                 <FaXTwitter />
               </a>
               <a href='https://www.linkedin.com/' target='blank' className='bg-gradient-to-b from-[#e9615e] to-[#ec9956] p-2 rounded-lg text-md sm:text-lg'>
@@ -43,9 +44,12 @@ const Hero = () => {
           {/* Resume Button */}
           <Fade direction="up" cascade damping={0.1} triggerOnce>
             <BubbleWrapper>
-              <a className="w-fit mx-auto lg:mx-0 text-xl sm:text-2xl py-2 px-6 mt-8 rounded-4xl drop-shadow-xl/20 bg-gradient-to-b from-[#e9615e] to-[#ec9956] flex items-center gap-3 cursor-pointer">
+              <Link to='/Resume' className="w-fit mx-auto lg:mx-0 text-xl sm:text-2xl py-2 px-6 mt-8 rounded-4xl drop-shadow-xl/20 bg-gradient-to-b from-[#e9615e] to-[#ec9956] flex items-center gap-3 cursor-pointer">
                 <FaDownload className='text-sm sm:text-lg' />Resume
-              </a>
+              </Link>
+              {/* <a href='https://drive.google.com/file/d/1TTXZLe37fN-QbmNgRMNc5sie9PY15Svv/view?usp=drive_link' target='blank' className="w-fit mx-auto lg:mx-0 text-xl sm:text-2xl py-2 px-6 mt-8 rounded-4xl drop-shadow-xl/20 bg-gradient-to-b from-[#e9615e] to-[#ec9956] flex items-center gap-3 cursor-pointer">
+                <FaDownload className='text-sm sm:text-lg' />Resume
+              </a> */}
             </BubbleWrapper>
           </Fade>
 
