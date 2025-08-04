@@ -35,7 +35,7 @@ const Hero = () => {
               <a href='https://x.com/ibtisumraian' target='blank' className='bg-gradient-to-b from-[#e9615e] to-[#ec9956] p-2 rounded-lg text-md sm:text-lg'>
                 <FaXTwitter />
               </a>
-              <a href='https://www.linkedin.com/' target='blank' className='bg-gradient-to-b from-[#e9615e] to-[#ec9956] p-2 rounded-lg text-md sm:text-lg'>
+              <a href='https://www.linkedin.com/in/ibtisumraian' target='blank' className='bg-gradient-to-b from-[#e9615e] to-[#ec9956] p-2 rounded-lg text-md sm:text-lg'>
                 <FaLinkedin />
               </a>
             </div>

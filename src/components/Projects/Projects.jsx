@@ -6,6 +6,29 @@ import ProjectModal from "../ProjectModal/ProjectModal";
 const projects = [
   {
     id: 1,
+    name: "MediCamp",
+    descriptionShort:
+      "A MERN stack medical camp management system with role-based access and real-time interactions.",
+    descriptionLong:
+      "MediCamp is a full-stack Medical Camp Management System built using the MERN stack. It empowers organizers to create and manage health camps, while participants can register, track participation, and provide feedback. The platform includes secure JWT authentication, role-based dashboards, interactive analytics, real-time search, and responsive design for seamless healthcare coordination.",
+    image: "https://res.cloudinary.com/deqw8tu5v/image/upload/v1754297827/Screenshot_2025-07-28_060935_auskqe.png",
+    technologies: [
+      "React", "Node.js", "Express.js", "MongoDB", "JWT", "TailwindCSS", "Cloudinary", "Recharts"
+    ],
+    features: [
+      "JWT-based secure authentication and role management",
+      "Organizer dashboard to create and manage camps",
+      "Participant registration and feedback system",
+      "Interactive analytics using Recharts",
+      "Real-time search and responsive design",
+      "Image upload with Cloudinary integration"
+    ],
+    liveDemo:   'https://medicamp-ce784.web.app/',
+    clientCode: 'https://github.com/Ibtisumraian/medicamp',
+    serverCode: 'https://github.com/Ibtisumraian/medicamp-server'
+  },
+  {
+    id: 2,
     name: "WhereIsIt",
     descriptionShort:
       "A MERN stack Lost & Found platform with JWT auth and advanced item search.",
@@ -27,7 +50,7 @@ const projects = [
     serverCode: "https://github.com/ibtisumraian/whereisit-server"
   },
   {
-    id: 2,
+    id: 3,
     name: "Recipe Book",
     descriptionShort:
       "A recipe app with login, dashboard, filters, and beautiful UI animations.",
@@ -49,7 +72,7 @@ const projects = [
     serverCode: "https://github.com/ibtisumraian/recipe-book-server"
   },
   {
-    id: 3,
+    id: 4,
     name: "Espresso Emporium",
     descriptionShort:
       "Coffee inventory system with full CRUD and a sleek café-friendly UI.",

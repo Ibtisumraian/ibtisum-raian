@@ -2,15 +2,31 @@ import React from 'react';
 import { Link } from 'react-router';
 import { motion } from 'framer-motion';
 import { 
-  FaDownload, FaGithub, FaLink, FaEnvelope, FaPhone, FaExternalLinkAlt, FaCode, FaHome 
+  FaDownload, FaGithub, FaLink, FaEnvelope, FaPhone, FaExternalLinkAlt, FaCode, FaHome, 
+  FaLinkedin
 } from 'react-icons/fa';
 
 // Main Resume Component
 const Resume = () => {
   // Path to the resume file in the `public` folder
-  const resumeUrl = '/ibtisum_raian_resume.pdf';
+  const resumeUrl = '/Ibtisum Raian _ Resume._Full_Stack_Developerpdf.pdf';
 
   const projects = [
+    {
+      name: 'MediCamp – Medical Camp Management System',
+      description: 'A full-stack web application designed to manage medical camps, allowing organizers to create and manage events while participants can register, view details, and give feedback. It features a robust dashboard system, role-based access, and real-time interactions to ensure smooth healthcare event management.',
+      features: [
+        'Authentication with JWT and secure role-based access (admin, organizer, participant).',
+        'Organizer dashboard for creating, updating, and managing medical camps.',
+        'Participant dashboard for registering, tracking, and rating attended camps.',
+        'Real-time camp search, feedback system, analytics with Recharts.',
+        'Cloudinary image upload, responsive UI, and interactive animations.',
+        'Integrated chatbot (Dialogflow) support for instant help and FAQs.'
+      ],
+      liveSite:   'https://medicamp-ce784.web.app/',
+      clientCode: 'https://github.com/Ibtisumraian/medicamp',
+      serverCode: 'https://github.com/Ibtisumraian/medicamp-server'
+    },
     {
       name: 'WhereIsIt – Lost & Found Platform',
       description: 'A full-stack lost and found web app where users can post and search for items with images and details. It features secure authentication, search filters, and a responsive, animated UI.',
@@ -20,23 +36,11 @@ const Resume = () => {
         'Search functionality with filtering by category and location.',
         'Fully responsive design with animations and intuitive UI.'
       ],
-      liveSite: 'https://whereisit-app.web.app/',
+      liveSite:   'https://whereisit-app.web.app/',
       clientCode: 'https://github.com/Ibtisumraian/whereisit',
       serverCode: 'https://github.com/ibtisumraian/whereisit-server'
     },
-    {
-      name: 'Recipe Book App',
-      description: 'A modern web app that lets users explore, create, and manage recipes with secure authentication and an interactive UI. It offers advanced filtering, personalized experiences, and a responsive design.',
-      features: [
-        'User authentication with Firebase (register, login, logout).',
-        'Add, edit, delete, and like recipes (CRUD operations).',
-        'Real-time filtering and search functionality.',
-        'Dark/light mode toggle and interactive UI using Lottie React.'
-      ],
-      liveSite: 'https://recipe-book-bff32.web.app/',
-      clientCode: 'https://github.com/Ibtisumraian/recipe-book',
-      serverCode: 'https://github.com/ibtisumraian/recipe-book-server'
-    }
+    
   ];
 
   return (
@@ -49,14 +53,14 @@ const Resume = () => {
       viewport={{ once: true }}
     >
       {/* --- Back to Home Button (Top Left) --- */}
-      <Link to="/" className="absolute top-8 left-0 sm:left-4 md:left-0">
+      <Link to="/" className="absolute top-8 left-0 cursor-pointer sm:left-4 md:left-0">
           <motion.button
-              className="flex items-center gap-2 bg-[#ec9956]/10 border border-[#ec9956]/50 text-white font-semibold text-sm py-2 px-4 rounded-lg shadow-lg backdrop-blur-sm hover:bg-[#ec9956]/20 transition-colors duration-300"
+              className="flex items-center cursor-pointer gap-2 bg-[#ec9956]/10 border border-[#ec9956]/50 text-white font-semibold text-sm py-2 px-4 rounded-lg shadow-lg backdrop-blur-sm hover:bg-[#ec9956]/20 transition-colors duration-300"
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 400 }}
           >
               <FaHome />
-              <span>Home</span>
+              <span className='cursor-pointer'>Home</span>
           </motion.button>
       </Link>
 
@@ -84,7 +88,11 @@ const Resume = () => {
              <div className="flex justify-center flex-wrap gap-x-6 gap-y-2 mt-4 text-sm text-gray-300">
                 <a href="mailto:ibtisumraian@gmail.com" className="flex items-center gap-2 hover:text-[#ec9956] transition-colors"><FaEnvelope /> ibtisumraian@gmail.com</a>
                 <span className="flex items-center gap-2"><FaPhone /> +8801323861148</span>
+                
+                 <a href="https://www.linkedin.com/in/ibtisumraian" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#ec9956] transition-colors"><FaLinkedin  /> LinkedIn/Ibtisumraian</a>
+                 
                  <a href="https://github.com/Ibtisumraian" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#ec9956] transition-colors"><FaGithub /> github.com/Ibtisumraian</a>
+                 
                 <a href="https://ibtisum-raian.web.app/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#ec9956] transition-colors"><FaLink /> ibtisum-raian.web.app</a>
              </div>
         </header>
@@ -117,9 +125,9 @@ const Resume = () => {
                       <h4 className="text-lg font-bold">{project.name}</h4>
                       <p className="text-gray-300 mt-1 mb-3">{project.description}</p>
                       <div className="flex flex-wrap gap-4 mb-4">
-                        <a href={project.liveSite} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:text-[#ec9956] transition-colors"><FaExternalLinkAlt /> Live Site</a>
-                        <a href={project.clientCode} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:text-[#ec9956] transition-colors"><FaCode /> Client Code</a>
-                        <a href={project.serverCode} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:text-[#ec9956] transition-colors"><FaCode /> Server Code</a>
+                        <a href={project.liveSite} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:text-[#ec9956] text-[#ec9956] transition-colors"><FaExternalLinkAlt /> Live Site</a>
+                        <a href={project.clientCode} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:text-[#ec9956] text-[#ec9956] transition-colors"><FaCode /> Client Code</a>
+                        <a href={project.serverCode} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:text-[#ec9956] text-[#ec9956] transition-colors"><FaCode /> Server Code</a>
                       </div>
                       <h5 className="font-semibold text-gray-200">Major Features:</h5>
                       <ul className="list-disc list-inside text-gray-300 space-y-1 mt-1 text-sm">
