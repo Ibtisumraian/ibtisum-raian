@@ -154,7 +154,7 @@ const Contact = () => {
             <div className="flex items-center gap-4">
               <FaLinkedin className="text-[#ec9956] text-xl" />
               <a
-                href="https://linkedin.com/in/ibtisumraian"
+                href="https://www.linkedin.com/in/ibtisumraian"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition"
