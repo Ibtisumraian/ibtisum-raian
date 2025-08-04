@@ -69,9 +69,7 @@ const ProjectModal = ({ project, onClose }) => {
 
             {/* Description */}
             <p className="mb-6 text-gray-300 text-[17px] leading-relaxed">
-              {project.descriptionLong.length > 300
-                ? project.descriptionLong.slice(0, 300) + "..."
-                : project.descriptionLong}
+              {project.descriptionLong}
             </p>
 
             {/* Features */}
